@@ -43,8 +43,6 @@ nav a {
     color: var(--white);
     font-weight: bold;
 }
-h1 {
-    color: var(--darkcyan);
 main {
     display: flex;
     align-items: center;
