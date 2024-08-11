@@ -21,10 +21,23 @@ header {
     display:flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: end;
+    padding: 10px;
     height: 10vh;
     width: 100%;
     background-color: var(--darkcyan);
+}
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 40%;
+}
+nav a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
 }
 h1 {
     color: var(--darkcyan);
