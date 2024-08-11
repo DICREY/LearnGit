@@ -1,3 +1,6 @@
 git pull origin main --allow-unrelated-histories
 git log --all --graph
 git log --all --graph --decorate --oneline
+git tag -a V0.5 -m "Ultima version subida" 5b14816
+git tag -d "nombre del tag a borrar"
+git push origin :refs/tag/<"nombre del tag a borrar">
