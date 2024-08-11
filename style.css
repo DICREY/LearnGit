@@ -46,5 +46,7 @@ main picture img {
 }
 .expand {
     position: fixed;
-    height: 40vh;
+    height: 60vh;
+    top: 20vh;
+    left: 40vw;
 }
