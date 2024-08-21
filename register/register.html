@@ -13,12 +13,25 @@
     <main>
         <form>
             <h1>REGISTER</h1>
-            <article>
+            <article class="names">
                 <input class="input name" type="text" placeholder="Name" required>
                 <input class="input lastname" type="text" placeholder="Last name" required>
             </article>
             <input class="input email" type="email" placeholder="Email" required>
-            <input class="input" type="text" placeholder="" required>
+            <input class="input" type="password" placeholder="Password" required>
+            <input class="input" type="password" placeholder="Confirm Password" required>
+            <aside class="check-conditions">
+                <div>
+                    <input type="checkbox" required>
+                    <p>Terms conditions</p>
+                </div>
+                <div>
+                    <input type="checkbox" required>
+                    <p>Privacy Policy</p>
+                </div>
+            </aside>
+            <input class="btn-register" type="button" value="Register">
+            <a href="../login/login.html"><p>¿Do you have an account?</p></a>
         </form>
     </main>
     <script src="register.js"></script>

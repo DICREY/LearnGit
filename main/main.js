@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded",function(){
     const btnSpaceman = document.querySelector(".btn-spaceman")
     const imgUser = document.querySelector(".img-user")
 
-    imgUser.src = "./imgs/user.jpg"
+    imgUser.src = "../imgs/user.jpg"
 
     btnAll.addEventListener("click",createAllImgs)
     btnShip.addEventListener("click",createShipImgs)

@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded",() => {
     const iconLock = document.querySelector(".i-lock")
     const inputContrasena = document.querySelector(".contrasena")
     const inputCorreo = document.querySelector(".correo")
-    const btnIngresar = document.querySelector(".ingresar")
+    const btnIngresar = document.querySelector(".btn-login")
 
     btnIngresar.addEventListener("click",ingreso)
     iconLock.addEventListener("click",viewPassword)
