@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded",() => {
     const inputCorreo = document.querySelector(".correo")
     const btnIngresar = document.querySelector(".ingresar")
 
+    btnIngresar.addEventListener("click",ingreso)
     iconLock.addEventListener("click",viewPassword)
 
     function viewPassword(){
@@ -16,15 +17,17 @@ document.addEventListener("DOMContentLoaded",() => {
         inputContrasena.setAttribute("type",changePassword)
     }
 
-    btnIngresar.addEventListener("click",() => {
-        infoUser = [
+    function ingreso() {
+        const infoUserValidad = [
             {
-                correo: inputCorreo.value,
-                contrasena: inputContrasena.value
+                correo: "cristianarrietar4@gmail.com",
+                contrasena: "cristian1234"
             }
         ]
-        for (let i of infoUser){
-            alert(i.correo + "\n" + i.contrasena)
-        }
-    })
+        infoUserValidad.forEach((i) => {
+            if (inputCorreo.value === i.correo && inputContrasena.value === i.contrasena) {
+                window.location.href = "../main/index.html"
+            }
+        })
+    }
 })
