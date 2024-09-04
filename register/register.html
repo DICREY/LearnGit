@@ -18,8 +18,14 @@
                 <input class="input lastname" type="text" placeholder="Last name" required>
             </article>
             <input class="input email" type="email" placeholder="Email" required>
-            <input class="input" type="password" placeholder="Password" required>
-            <input class="input" type="password" placeholder="Confirm Password" required>
+            <aside class="password-check">
+                <input class="input input-password" type="password" placeholder="Password" required>
+                <box-icon class="icon-lock i-lock-p" type='solid' name='lock-alt' color="white"></box-icon>
+            </aside>
+            <aside class="password-check">
+                <input class="input input-password-con" type="password" placeholder="Confirm Password" required>
+                <box-icon class="icon-lock i-lock-p-c" type='solid' name='lock-alt' color="white"></box-icon>
+            </aside>
             <aside class="check-conditions">
                 <div>
                     <input type="checkbox" required>
@@ -34,6 +40,7 @@
             <a href="../login/login.html"><p>¿Do you have an account?</p></a>
         </form>
     </main>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="register.js"></script>
 </body>
 </html>

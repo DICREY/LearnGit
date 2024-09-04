@@ -8,9 +8,9 @@ document.addEventListener("DOMContentLoaded",() => {
     iconLock.addEventListener("click",viewPassword)
 
     function viewPassword(){
-        const NewName = "bx bxs-lock-open"
-        let changeName = iconLock.className === NewName ? "bx bxs-lock" : NewName
-        iconLock.className = changeName
+        const NewName = "lock-open-alt"
+        let changeName = iconLock.name === NewName ? "lock-alt" : NewName
+        iconLock.name = changeName
         
         let type = inputContrasena.getAttribute("type")
         let changePassword = type === "password" ? "text" : "password"

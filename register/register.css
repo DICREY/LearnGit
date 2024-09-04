@@ -68,6 +68,19 @@ main form {
     font-weight: lighter;
     font-size: var(--font-size);
 }
+.password-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.password-check box-icon {
+    cursor: pointer;
+    background-color: var();
+    color: var(--white);
+    position: absolute;
+    left: 87%;
+}
 .check-conditions{
     display: flex;
     flex-direction: row;
@@ -148,5 +161,8 @@ a:hover::before {
     .check-conditions{
         flex-direction: column;
         gap: 10px;
+    }
+    .password-check box-icon {
+        left: 80%;
     }
 }
